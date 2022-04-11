@@ -17,9 +17,10 @@ const AddSongForm = (props) => {
             artist: artist,
             album: album,
             genre: genre,
-            releaseDate: releaseDate
+            release_date: releaseDate
         };
         console.log(newSong);
+        props.addNewSongProperty(newSong)
     }
     
     return ( 

@@ -8,6 +8,13 @@ function App() {
 
   const [songs, setSongs] = useState([])
 
+  function addNewSong(song){
+
+    let tempSongs = [song, ...songs];
+
+    setSongs(tempSongs);
+  }
+
   useEffect(() => {
     getAllSongs();
   }, [])
@@ -29,7 +36,7 @@ function App() {
   return (
     <div>
       <DisplaySongs parentSongs={songs} />
-      <AddSongForm />
+      <AddSongForm addNewSongProperty={addNewSong} />
     </div>
   );
 }
