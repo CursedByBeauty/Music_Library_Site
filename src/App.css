@@ -2,11 +2,17 @@
     border: 1px;
     border-style: solid;
     border-color: black;
-    margin: 1em;
+    margin: 0em;
     padding: 1em;
 }
 
+div.col-md-2 {
+    background-color: #606c38;
+}
 
-.background {
-    background-color: #E9D8A6;
-  }
+h3 {
+    background-color: #606c38;
+    margin: 0;
+    padding: 13px;
+    color: white;
+}

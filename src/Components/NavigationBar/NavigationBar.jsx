@@ -1,14 +1,17 @@
-import React from 'react';
-import './NavigationBar.css'
+import React from "react";
+import "./NavigationBar.css";
 
-
-const NavigationBar = () => {
-    return ( 
-        <nav className='NavBarItems'>
-            <h1 style={{ margin: "1em" }}>Music
+const NavigationBar = ({userInput, getUserInput}) => {
+  return (
+    <><nav className="NavBarItems">
+      <h1>
+        Music
         <small className="text-muted">Library</small>
       </h1>
-        </nav> );
-}
- 
+      
+    </nav>
+    <input value={userInput} onChange={(e)=> {getUserInput(e)}}/></>
+  );
+};
+
 export default NavigationBar;
