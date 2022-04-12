@@ -3,9 +3,10 @@ import React from 'react';
 
 function DisplaySongs(props) {
     return (
-        <table>
+        <table className='table'>
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Title</th>
                     <th>Artist</th>
                     <th>Album</th>
