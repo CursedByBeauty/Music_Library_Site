@@ -10,11 +10,11 @@ function App() {
   const [songs, setSongs] = useState([]);
   const [userInput, setUserInput] = useState("")
 
-  function addNewSong(song) {
-    let tempSongs = [song, ...songs];
+  // function addNewSong(song) {
+  //   let tempSongs = [song, ...songs];
 
-    setSongs(tempSongs);
-  }
+  //   setSongs(tempSongs);
+  // }
 
   const getUserInput = (e) => {
     setUserInput(e.target.value)
@@ -54,7 +54,7 @@ function App() {
           </div>
           <h3>Add a Song</h3>
           <div className="border-box">
-            <AddSongForm addNewSongProperty={addNewSong} />
+            <AddSongForm addNewSongProperty={createSong} />
           </div>
         </div>
         <div className="col-md-2"></div>
