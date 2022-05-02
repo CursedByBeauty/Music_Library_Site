@@ -10,9 +10,16 @@ div.col-md-2 {
     background-color: #606c38;
 }
 
-h3 {
+.form-title {
     background-color: #606c38;
-    margin: 0;
     padding: 13px;
     color: white;
+    margin-bottom: 0;
+}
+.add-song-button {
+    margin-top: 1rem;
+    background-color:#606c38;
+    border-color: #606c38;
+    color: white;
+    border-radius: 10px;
 }

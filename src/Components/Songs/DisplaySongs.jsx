@@ -14,8 +14,7 @@ function DisplaySongs(props) {
         </tr>
       </thead>
       <tbody>
-        {props.parentSongs
-          .filter((song, index) => {
+        {props.parentSongs.filter((song) => {
             if (song.title.includes(props.userInput)) {
                 return true;
             }
@@ -32,9 +31,9 @@ function DisplaySongs(props) {
                 return true; 
             }
           })
-          .map((song, index) => {
+          .map((song,index) => {
             return (
-              <tr>
+              <tr key={song.id}>
                 <td>{index + 1}</td>
                 <td>{song.title}</td>
                 <td>{song.artist}</td>

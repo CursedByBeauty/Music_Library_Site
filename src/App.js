@@ -5,7 +5,6 @@ import AddSongForm from "./Components/MusicTable/AddSongForm";
 import "./App.css";
 import NavigationBar from "./Components/NavigationBar/NavigationBar";
 
-const newLocal = "#E9D8A6";
 function App() {
   const [songs, setSongs] = useState([]);
   const [userInput, setUserInput] = useState("")
@@ -52,7 +51,7 @@ function App() {
           <div className="border-box">
             <DisplaySongs parentSongs={songs} userInput={userInput} />
           </div>
-          <h3>Add a Song</h3>
+          <h3 className="form-title">Add a Song</h3>
           <div className="border-box">
             <AddSongForm addNewSongProperty={createSong} />
           </div>
