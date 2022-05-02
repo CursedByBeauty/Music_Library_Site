@@ -1,8 +1,7 @@
 import React from "react";
-
 function DisplaySongs(props) {
   return (
-    <table className="table">
+    <table className="table" >
       <thead>
         <tr>
           <th>#</th>
